@@ -1,10 +1,10 @@
+import { enableProdMode } from '@angular/core';
 import {
 	platformNativeScript,
 	runNativeScriptAngularApp,
 } from '@nativescript/angular';
-import { enableProdMode } from '@angular/core';
-import { environment } from './environments/environment';
 import { AppModule } from './app.module';
+import { environment } from './environments/environment';
 
 if (environment.production) {
 	enableProdMode();
