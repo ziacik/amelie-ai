@@ -1,15 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
-import {
-	NativeScriptCommonModule,
-	NativeScriptFormsModule,
-	NativeScriptRouterModule,
-} from '@nativescript/angular';
+import { NativeScriptCommonModule, NativeScriptFormsModule, NativeScriptRouterModule } from '@nativescript/angular';
 
-const MODULES = [
-	NativeScriptCommonModule,
-	NativeScriptFormsModule,
-	NativeScriptRouterModule,
-];
+const MODULES = [NativeScriptCommonModule, NativeScriptFormsModule, NativeScriptRouterModule];
 
 @NgModule({
 	imports: [...MODULES],

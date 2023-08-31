@@ -1,3 +1,6 @@
 # Add files here to ignore them from prettier formatting
 /dist
 /coverage
+/apps/amelie-ai-nativescript/hooks
+/apps/amelie-ai-nativescript/node_modules
+/apps/amelie-ai-nativescript/platforms

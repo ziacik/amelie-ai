@@ -61,10 +61,7 @@
 		"lint": {
 			"executor": "@nx/linter:eslint",
 			"options": {
-				"lintFilePatterns": [
-					"apps/amelie-ai-nativescript/**/*.ts",
-					"apps/amelie-ai-nativescript/src/**/*.html"
-				]
+				"lintFilePatterns": ["apps/amelie-ai-nativescript/**/*.ts", "apps/amelie-ai-nativescript/src/**/*.html"]
 			}
 		}
 	}

@@ -1,8 +1,4 @@
-import {
-	AndroidActivityCallbacks,
-	Application,
-	setActivityCallbacks,
-} from '@nativescript/core';
+import { AndroidActivityCallbacks, Application, setActivityCallbacks } from '@nativescript/core';
 
 class ActivityCallbacksNullError extends Error {
 	constructor() {
@@ -30,33 +26,20 @@ export class Activity extends androidx.appcompat.app.AppCompatActivity {
 			throw new ActivityCallbacksNullError();
 		}
 
-		this._callbacks.onCreate(
-			this,
-			savedInstanceState,
-			this.getIntent(),
-			super.onCreate
-		);
+		this._callbacks.onCreate(this, savedInstanceState, this.getIntent(), super.onCreate);
 	}
 
 	public override onNewIntent(intent: android.content.Intent): void {
 		const extras = intent.getExtras();
 
 		// todo remove
-		console.log(
-			'on new intent',
-			extras.getString(android.content.Intent.EXTRA_TEXT)
-		);
+		console.log('on new intent', extras.getString(android.content.Intent.EXTRA_TEXT));
 
 		if (!this._callbacks) {
 			throw new ActivityCallbacksNullError();
 		}
 
-		this._callbacks.onNewIntent(
-			this,
-			intent,
-			super.setIntent,
-			super.onNewIntent
-		);
+		this._callbacks.onNewIntent(this, intent, super.setIntent, super.onNewIntent);
 	}
 
 	public override onSaveInstanceState(outState: android.os.Bundle): void {
@@ -64,11 +47,7 @@ export class Activity extends androidx.appcompat.app.AppCompatActivity {
 			throw new ActivityCallbacksNullError();
 		}
 
-		this._callbacks.onSaveInstanceState(
-			this,
-			outState,
-			super.onSaveInstanceState
-		);
+		this._callbacks.onSaveInstanceState(this, outState, super.onSaveInstanceState);
 	}
 
 	public override onStart(): void {
@@ -112,41 +91,21 @@ export class Activity extends androidx.appcompat.app.AppCompatActivity {
 		this._callbacks.onBackPressed(this, super.onBackPressed);
 	}
 
-	public override onRequestPermissionsResult(
-		requestCode: number,
-		permissions: string[],
-		grantResults: number[]
-	): void {
+	public override onRequestPermissionsResult(requestCode: number, permissions: string[], grantResults: number[]): void {
 		if (!this._callbacks) {
 			throw new ActivityCallbacksNullError();
 		}
 
-		this._callbacks.onRequestPermissionsResult(
-			this,
-			requestCode,
-			permissions,
-			grantResults,
-			() => {
-				/* void */
-			}
-		);
+		this._callbacks.onRequestPermissionsResult(this, requestCode, permissions, grantResults, () => {
+			/* void */
+		});
 	}
 
-	public override onActivityResult(
-		requestCode: number,
-		resultCode: number,
-		data: android.content.Intent
-	): void {
+	public override onActivityResult(requestCode: number, resultCode: number, data: android.content.Intent): void {
 		if (!this._callbacks) {
 			throw new ActivityCallbacksNullError();
 		}
 
-		this._callbacks.onActivityResult(
-			this,
-			requestCode,
-			resultCode,
-			data,
-			super.onActivityResult
-		);
+		this._callbacks.onActivityResult(this, requestCode, resultCode, data, super.onActivityResult);
 	}
 }

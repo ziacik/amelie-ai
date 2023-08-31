@@ -1,8 +1,5 @@
 import { enableProdMode } from '@angular/core';
-import {
-	platformNativeScript,
-	runNativeScriptAngularApp,
-} from '@nativescript/angular';
+import { platformNativeScript, runNativeScriptAngularApp } from '@nativescript/angular';
 import { AppModule } from './app.module';
 import { environment } from './environments/environment';
 
