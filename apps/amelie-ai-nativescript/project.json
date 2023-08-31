@@ -63,6 +63,20 @@
 			"options": {
 				"lintFilePatterns": ["apps/amelie-ai-nativescript/**/*.ts", "apps/amelie-ai-nativescript/src/**/*.html"]
 			}
+		},
+		"test": {
+			"executor": "@nx/jest:jest",
+			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+			"options": {
+				"jestConfig": "apps/amelie-ai-nativescript/jest.config.ts",
+				"passWithNoTests": true
+			},
+			"configurations": {
+				"ci": {
+					"ci": true,
+					"codeCoverage": true
+				}
+			}
 		}
 	}
 }
