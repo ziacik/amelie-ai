@@ -1,4 +1,5 @@
 import { AndroidActivityCallbacks, Application, setActivityCallbacks } from '@nativescript/core';
+import { setActivatedUrl } from './core/activated-url';
 
 class ActivityCallbacksNullError extends Error {
 	constructor() {
@@ -31,9 +32,9 @@ export class Activity extends androidx.appcompat.app.AppCompatActivity {
 
 	public override onNewIntent(intent: android.content.Intent): void {
 		const extras = intent.getExtras();
+		const url = extras.getString(android.content.Intent.EXTRA_TEXT);
 
-		// todo remove
-		console.log('on new intent', extras.getString(android.content.Intent.EXTRA_TEXT));
+		setActivatedUrl(url);
 
 		if (!this._callbacks) {
 			throw new ActivityCallbacksNullError();
@@ -67,7 +68,6 @@ export class Activity extends androidx.appcompat.app.AppCompatActivity {
 	}
 
 	public override onDestroy(): void {
-		super.onDestroy();
 		if (!this._callbacks) {
 			throw new ActivityCallbacksNullError();
 		}

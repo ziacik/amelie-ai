@@ -40,6 +40,11 @@
 				"jest": true
 			},
 			"rules": {}
+		},
+		{
+			"files": ["*.html"],
+			"extends": ["plugin:@nx/angular-template"],
+			"rules": {}
 		}
 	]
 }

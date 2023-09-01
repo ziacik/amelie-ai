@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { lastValueFrom, of } from 'rxjs';
-import { ACTIVATED_URL } from './activated-url';
+import { ACTIVATED_URL } from '../core/activated-url';
 import { ContentRetrievalService } from './content-retrieval.service';
 
 describe('ContentRetrievalService', () => {
@@ -12,7 +12,7 @@ describe('ContentRetrievalService', () => {
 			providers: [
 				{
 					provide: ACTIVATED_URL,
-					useValue: of(new URL('https://some-url.net')),
+					useValue: of('https://some-url.net/'),
 				},
 			],
 		});
