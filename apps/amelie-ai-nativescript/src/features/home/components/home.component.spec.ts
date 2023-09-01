@@ -1,9 +1,10 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { ContentRetrievalService } from '../../../app/content-retrieval.service';
 import { ACTIVATED_URL } from '../../../core/activated-url';
-import { MockLabelComponent } from '../../../mocks/label.component.mock';
+import { MockHtmlViewComponent } from '../../../mocks/html-view.component.mock';
 import { NativeScriptMocksModule } from '../../../mocks/nativescript-mocks.module';
 import { HomeComponent } from './home.component';
 
@@ -18,7 +19,7 @@ describe('HomeComponent', () => {
 
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
-			imports: [NativeScriptMocksModule],
+			imports: [NativeScriptMocksModule, HttpClientTestingModule],
 			declarations: [HomeComponent],
 			providers: [
 				{ provide: ContentRetrievalService },
@@ -39,16 +40,16 @@ describe('HomeComponent', () => {
 	});
 
 	it('shows the content from the content retrieval service', () => {
-		const label: MockLabelComponent = fixture.debugElement.query(By.directive(MockLabelComponent)).componentInstance;
+		const label: MockHtmlViewComponent = fixture.debugElement.query(By.directive(MockHtmlViewComponent)).componentInstance;
 		expect(label).toBeDefined();
-		expect(label.text).toContain('some text from content retrieval service');
+		expect(label.html).toContain('some text from content retrieval service');
 	});
 
 	it('updates the content when retrieval service updates content', () => {
 		content.next('updated content');
 		fixture.detectChanges();
-		const label: MockLabelComponent = fixture.debugElement.query(By.directive(MockLabelComponent)).componentInstance;
+		const label: MockHtmlViewComponent = fixture.debugElement.query(By.directive(MockHtmlViewComponent)).componentInstance;
 		expect(label).toBeDefined();
-		expect(label.text).toContain('updated content');
+		expect(label.html).toContain('updated content');
 	});
 });

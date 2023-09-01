@@ -1,9 +1,9 @@
 import { InjectionToken, NgZone } from '@angular/core';
-import { BehaviorSubject, Observable, Subject } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 
 export const ACTIVATED_URL = new InjectionToken<string>('ACTIVATED_URL');
 
-const activatedUrl = new BehaviorSubject<string>('');
+const activatedUrl = new Subject<string>();
 
 export function setActivatedUrl(url: string): void {
 	activatedUrl.next(url);
