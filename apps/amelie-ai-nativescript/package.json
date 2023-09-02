@@ -7,7 +7,8 @@
 		"postinstall": "node ./tools/postinstall.js"
 	},
 	"dependencies": {
-		"@nativescript/core": "*"
+		"@nativescript/core": "*",
+		"@swc/helpers": "~0.5.0"
 	},
 	"devDependencies": {
 		"@nativescript/android": "~8.5.0",
