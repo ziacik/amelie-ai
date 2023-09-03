@@ -8,10 +8,14 @@
 	},
 	"dependencies": {
 		"@nativescript/core": "*",
-		"@swc/helpers": "~0.5.0"
+		"@swc/helpers": "~0.5.0",
+		"jsdom": "^22.1.0",
+		"marked": "^7.0.5",
+		"turndown": "^7.1.2"
 	},
 	"devDependencies": {
 		"@nativescript/android": "~8.5.0",
-		"@nativescript/ios": "~8.5.0"
+		"@nativescript/ios": "~8.5.0",
+		"@types/turndown": "^5.0.1"
 	}
 }
