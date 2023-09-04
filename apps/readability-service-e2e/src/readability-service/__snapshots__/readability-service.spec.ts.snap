@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GET /readable fetches the specified url and simplifies the content 1`] = `
+{
+  "byline": "Přispěvatelé projektů Wikimedia",
+  "content": "z Wikipédie, slobodnej encyklopédie
+
+Amélia z Montmartru Originálny názov Le Fabuleux Destin d'Amélie Poulain Žáner romantická komédia Dĺžka 122 minút Štát Francúzsko Pôvodný jazyk francúzsky Rok 2001 Rozpočet 11 400 000 € Zárobok 173 921 954 $(celosvetovo) Filmový štáb Réžia Jean-Pierre Jeunet Scenár Guillaume Laurant Jean-Pierre Jeunet (scenár) Guillaume Laurant (dialógy) Produkcia Jean-Marc Deschamps Hudba Yann Tiersen Kamera Bruno Delbonnel Obsadenie
+
+Obsadenie\\[rozbaľ\\]
+
+Pozri aj Filmový portál
+
+Amélia z Montmartru (Le Fabuleux Destin d'Amélie Poulain) je francúzska romantická komédia režírovaná Jean-Pierre Jeunetom z roku 2001, v ktorej stvárnila hlavnú rolu Audrey Tautou.
+
+Film získal viacero ocenení. Na filmovom festivale v Karlových Varoch zvíťazila a získala Krištáľový glóbus. Potom získala cenu za najlepší film na Európskom udeľovaní filmových cien. Získala 4 ceny César (vrátane ceny za najlepší film a najlepšiu réžiu), dve ceny BAFTA (vrátane najlepšieho scenára) a bola nominovaná na 5 Oscarov. Po snímke Nedotknuteľní je druhým najlepšie posudzovaným francúzskym filmom v databáze IMDb.\\[1\\]
+
+## Dej\\[upraviť | upraviť zdroj\\]
+
+Amélia z Montmartru je príbeh Amélie Poulainovej, dievčaťa, ktoré vyrástlo izolované od ostatných detí svojim tichým otcom, ktorý jej v detstve omylom diagnostikoval srdcovú vadu. Chybná diagnóza bola spôsobená tým, že jej jediný kontakt s otcom spočíval v každomesačnom vyšetrení, ktoré Améliu tak rozrušilo, že jej veľmi silne búšilo srdce. Jej matka (rovnako neurotická ako otec) zomrela, keď bola Amélia malá, následkom samovraždy istej Quebečanky, ktorá sa rozhodla ukončiť svoj život skokom z katedrály Notre-Dame. Pádom tak zabila Améliinu matku. Jej otec sa ešte viac uzatvoril a malá Amélia bola nútená žiť vo svojom vlastnom svete, bez ostatných detí. Amélia si tak vytvorila veľmi nezvyčajné predstavy.
+
+Keď Amélia vyrástla, stala sa servírkou v malej kaviarni U dvoch mlynov, ktorú vlastní bývalá cirkusová krasojazdkyňa. Osadenstvo kaviarne je veľmi excentrické a to ako zamestnanci, tak hostia. Život Amélie je v jej 22 rokoch veľmi jednoduchý. Niekoľkokrát sa pokúšala o vzťah, však neúspešne. Napriek tomu má Amélia niekoľko vecí, ktoré jej spôsobujú radosť. Medzi ne patrí napríklad rozbíjanie krusty crème brûlée čajovou lyžičkou, prechádzanie sa po slnečnom Paríži, zasunutie ruky do vreca so zrnom a hádzanie žabiek na kanáli Sv. Martina, hádanie koľko ľudí má v Paríži práve orgazmus.
+
+Celý jej život sa zmení v okamihu, keď zomrie princezná Diana. Šokovaná touto informáciou upustí sklený uzáver od nádobky, ktorý sa odkotúľa k stene jej kúpeľne, kde odhalí tajnú skrýšu, v ktorej Amélia nájde kovovú schránku, ktorú si tu pred rokmi ukryl malý chlapec. Fascinovaná nálezom sa rozhodne vypátrať, komu tento poklad patrí a rozhodne sa, že ak bude mať príslušný radosť, bude takto pomáhať aj iným ľuďom, v opačnom prípade nebude.
+
+Zoznámi sa samotárskym susedom Raymondom Dufayelom, maliarom, ktorý pravidelne každý rok znovu maľuje rovnaký obraz (Le Déjeuner des canotiers, Obed veslárov) od Renoira. Ľudia ho poznajú ako „skleneného muža“, vďaka jeho krehkým kostiam. S jeho pomocou sa jej podarí nájsť majiteľa kovovej schránky. Tú umiestní do telefónnej búdky, okolo ktorej pán Bretodeau chodí a keď prechádza okolo nej, zavolá do búdky z blízkeho baru. Po tom, čo muž otvorí schránku, vrátia sa mu spomienky jeho dávneho detstva. Táto udalosť ho privedie do baru, odkiaľ volala Amélia. Potom, čo vidí, že jej počin mal pozitívny efekt, rozhodne sa, že bude ľuďom ovplyvňovať život a konať dobro. Toto rozhodnutie z Amélie vytvorí strážneho anjela iných. Svojho otca presvedčí, aby si splnil svoj sen a cestoval okolo sveta (s pomocou jeho záhradného trpaslíka a svojej kamarátky letušky), dá dohromady svoju kolegyňu s hosťom kaviarne, pomôže domovníčke a Lucienovi, ktorého šikanuje majiteľ stánku so zeleninou, kde pracuje.
+
+Amélia sa stará o ostatných, ale nikto sa nestará o ňu. Zatiaľ, čo pomáha priniesť iným ľuďom šťastie, je nútená zrevidovať svoj osamelý život – to je zrejmé najmä v pôvodne platonickom vzťahu k podivnému Ninovi Quincampoixovi, zvláštnemu mladému mužovi, ktorý zbiera nepodarené a roztrhané fotky ľudí, ktorí sa nechajú odfotiť v automate. Zblíži sa s ním vďaka albumu, ktorý raz stratí. Nemá však odvahu na osobné stretnutie a tak zvažuje, ako album odovzdať. Nakoniec k tomu dôjde nepriamo a vlastné stretnutia týchto dvoch ľudí sa uskutoční až na samý záver filmu ako happyend. Tak prichádza skutočné šťastie Amélie Poulainovej.
+
+Opis zápletky alebo rozuzlenia príbehu sa tu končí.
+
+Zeleninárstvo Monsieura Collignona na Rue des Trois Frères v Paríži, kde sa film natáčal Reštaurácia U Dvoch mlynov na Montmarte, kde sa film natáčal Le déjeuner des canotiers Obraz francúzskeho impresionistu Renoira. Dievča uprostred obrazu pijúca pohár vody občas reprezentuje Améliu
+
+## Obsadenie\\[upraviť | upraviť zdroj\\]
+
+Audrey Tautou – Amélie Poulain Mathieu Kassovitz – Nino Quincampoix Rufus – Raphaël Poulain Lorella Cravotta – Amandine Poulain Serge Merlin – Raymond Dufayel Jamel Debbouze – Lucien Clotilde Mollet – Gina Claire Maurier – Suzanne Isabelle Nanty – Georgette Dominique Pinon – Joseph Artus de Penguern – Hipolito Yolande Moreau – Madeleine Wallace Urbain Cancelier – Collignon Maurice Bénichou – Dominique Bretodeau Michel Robin – pán Collignon Andrée Damant – pani Colligonová Claude Perron – Eva, Ninova kolegyně Armelle – Philomène, letuška Ticky Holgado – muž z fotografie, opravár automatov Kevin Fernandes – Bretodeau, ako dieťa Flora Guiet – Amélia, v 6 rokoch Amaury Babault – Nino, ako dieťa André Dussollier – rozprávač
+
+## Referencie\\[upraviť | upraviť zdroj\\]
+
+↑ Top 250 of IMDb, IMDb
+
+## Iné projekty\\[upraviť | upraviť zdroj\\]
+
+Commons ponúka multimediálne súbory na tému Amélia z Montmartru
+
+## Externé odkazy\\[upraviť | upraviť zdroj\\]
+
+Amélia z Montmartru v Česko-Slovenskej filmovej databáze Amélie v Internet Movie Database (po anglicky)
+
+## Zdroj\\[upraviť | upraviť zdroj\\]
+
+Tento článok je čiastočný alebo úplný preklad článku Amélie na anglickej Wikipédii.
+
+Ocenenia PredchodcaKaždý to rád inak Cézar za najlepší film2002 NástupcaPianista",
+  "dir": "ltr",
+  "excerpt": "z Wikipédie, slobodnej encyklopédie",
+  "lang": "sk",
+  "length": 6295,
+  "siteName": "nadace Wikimedia",
+  "title": "Amélia z Montmartru",
+}
+`;
