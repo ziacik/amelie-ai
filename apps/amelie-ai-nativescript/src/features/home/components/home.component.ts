@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, switchMap } from 'rxjs';
+import { ArticleAiService } from '../../../app/article-ai.service';
 import { ContentRetrievalService } from '../../../app/content-retrieval.service';
 import { setStatusBarColor } from '../../../utils';
 
@@ -11,8 +12,8 @@ import { setStatusBarColor } from '../../../utils';
 export class HomeComponent {
 	readonly content$: Observable<string>;
 
-	constructor(contentRetrievalService: ContentRetrievalService) {
-		this.content$ = contentRetrievalService.getContent();
+	constructor(contentRetrievalService: ContentRetrievalService, articleAiService: ArticleAiService) {
+		this.content$ = contentRetrievalService.getContent().pipe(switchMap((it) => articleAiService.convert(it)));
 	}
 
 	ngOnInit() {

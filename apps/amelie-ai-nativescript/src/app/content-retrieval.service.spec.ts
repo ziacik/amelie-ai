@@ -23,17 +23,17 @@ describe('ContentRetrievalService', () => {
 		httpTestingController = TestBed.inject(HttpTestingController);
 	});
 
-	it('will retrieve content from activated url', async () => {
+	it('will retrieve content from readability service for activated url', async () => {
 		const contentPromise = lastValueFrom(service.getContent());
-		const request = httpTestingController.expectOne('https://some-url.net/');
-		request.flush('<html>content</html>');
-		expect(await contentPromise).toEqual('<html>content</html>');
+		const request = httpTestingController.expectOne('http://192.168.0.141:3000/article?url=https://some-url.net/');
+		request.flush({ content: `# Amélie\n\nYou'll never be a vegetable, even artichokes have hearts.` });
+		expect(await contentPromise).toEqual("# Amélie\n\nYou'll never be a vegetable, even artichokes have hearts.");
 	});
 
 	it('will return error message when error occurs on fetch', async () => {
 		const contentPromise = lastValueFrom(service.getContent());
-		const request = httpTestingController.expectOne('https://some-url.net/');
+		const request = httpTestingController.expectOne('http://192.168.0.141:3000/article?url=https://some-url.net/');
 		request.error(new ProgressEvent('error'));
-		expect(await contentPromise).toEqual('Error: Http failure response for https://some-url.net/: 0');
+		expect(await contentPromise).toEqual('Error: Http failure response for http://192.168.0.141:3000/article?url=https://some-url.net/: 0');
 	});
 });
