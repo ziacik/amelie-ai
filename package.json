@@ -63,6 +63,7 @@
 		"@angular/platform-browser": "^16.0.0",
 		"@angular/platform-browser-dynamic": "^16.0.0",
 		"@angular/router": "^16.0.0",
+		"@azure/functions": "^4.0.0-alpha.11",
 		"@mozilla/readability": "^0.4.4",
 		"@nativescript/angular": "^16.0.0",
 		"@nativescript/core": "~8.5.0",

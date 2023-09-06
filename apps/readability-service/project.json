@@ -15,7 +15,19 @@
 				"bundle": false,
 				"main": "apps/readability-service/src/main.ts",
 				"tsConfig": "apps/readability-service/tsconfig.app.json",
-				"assets": ["apps/readability-service/src/assets"],
+				"assets": [
+					"apps/readability-service/src/assets",
+					{
+						"input": "apps/readability-service",
+						"glob": "host.json",
+						"output": ""
+					},
+					{
+						"input": "apps/readability-service",
+						"glob": "local.settings.json",
+						"output": ""
+					}
+				],
 				"generatePackageJson": true,
 				"esbuildOptions": {
 					"sourcemap": true,
